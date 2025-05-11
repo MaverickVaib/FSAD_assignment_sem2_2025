@@ -38,6 +38,11 @@ cd frontend
 npm install
 npm run dev
 
+Connect to : 
+http://localhost:5173/login
+
+On browser
+
 Login credentials
   admin 
   1234
