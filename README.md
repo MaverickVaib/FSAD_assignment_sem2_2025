@@ -38,6 +38,6 @@ cd frontend
 npm install
 npm run dev
 
-Login credentiaLS
-admin 
-1234
+Login credentials
+  admin 
+  1234
