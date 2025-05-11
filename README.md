@@ -31,3 +31,13 @@ npm install
 npx nodemon server.js
 
 ( Ensure MongoDB is running locally (Compass or service))
+
+2. Frontend
+
+cd frontend
+npm install
+npm run dev
+
+Login credentiaLS
+admin 
+1234
