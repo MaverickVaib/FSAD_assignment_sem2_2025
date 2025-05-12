@@ -25,18 +25,18 @@ Running the Application
 
 1. Backend
 
-bash
-cd backend
-npm install
+bash;
+cd backend;
+npm install;
 npx nodemon server.js
 
 ( Ensure MongoDB is running locally (Compass or service))
 
 2. Frontend
 
-cd frontend
-npm install
-npm install papaparse
+cd frontend;
+npm install;
+npm install papaparse;
 npm run dev
 
 Connect to : 
