@@ -53,6 +53,22 @@ const markVaccinated = async (req, res) => {
     res.json({ message: "Student marked as vaccinated.", student });
   
 };
+const bulkUploadStudents = async (req, res) => {
+  try {
+    const { students } = req.body;
+    const formatted = students.map((s) => ({
+      name: s.name,
+      studentId: s.studentId,
+      class: s.class,
+      vaccinated: false,
+    }));
+
+    await Student.insertMany(formatted);
+    res.json({ message: "Bulk upload successful", count: formatted.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
 
 
 module.exports = {
@@ -60,5 +76,6 @@ module.exports = {
   addStudent,
   updateStudent,
   deleteStudent,
-  markVaccinated
+  markVaccinated,
+  bulkUploadStudents,
 };
